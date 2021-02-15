@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Flask Example</title>
+    </head>
+    <body>
+        <form action="" method="post">
+            <input type="text" placeholder="Username" name="username">
+            <input type="password" placeholder="Password" name="password">
+            <input type="submit" value="LOGIN">
+        </form>
+        {% if error %}
+            <p><strong>Error:</strong>{{ error }}</p>
+        {% endif %}
+    </body>
+</html>
