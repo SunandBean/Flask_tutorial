@@ -3,8 +3,8 @@ import requests
 import datetime
 
 if __name__ == "__main__":
-    datetime_startDate = datetime.datetime(2012,1,1).date()
-    datetime_endDate = datetime.datetime.today().date()
+    datetime_startDate = datetime.datetime(2020,1,1).date()
+    datetime_endDate = datetime.datetime(2021,1,1).date()
 
     data_dict = {'country': "US",
             'ticker' : "AAPL",
@@ -14,7 +14,7 @@ if __name__ == "__main__":
     data_dict["username"] = "IG_rasp"
     data_dict["password"] = "devbysb"
 
-    r = requests.post('http://127.0.0.1:5000/market_database',data = data_dict)
+    r = requests.post('http://119.194.201.232:9001/market_database',data = data_dict)
 
 
     # print(type(r.json()))
